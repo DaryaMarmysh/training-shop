@@ -1,0 +1,119 @@
+.bg
+{
+    margin-top: 96px;
+    background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+    max-width: 1280px;
+    width:100%;
+    height:580px;
+    position: relative;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+    text-transform: uppercase;
+}
+.photo1{
+position: absolute;
+z-index: 1;
+left:5%;
+width: 311px;
+height: 580px;
+background-repeat: no-repeat;
+background-position:bottom;
+background-image: url("../../img/png/Daco_6068770.png");
+}
+.photo2
+{
+    z-index: 1;
+    position: absolute;
+    right:15%;
+    top:45px;
+    width: 219px;
+    height: 524px;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-image: url("../../img/png/men_banner.png");
+}
+.bg .text-block
+{
+    background: white;
+  text-align: center;
+  align-items: center;
+   
+    position: absolute;
+    border-radius: 4px;
+    padding:0px 46px ;
+   top:15%;
+  max-width: 532px;
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-bottom: 60px;
+  width: auto;
+}
+.bg .text-block .title
+{
+    display:inline-block;
+    white-space: nowrap;
+    padding-top: 80px;
+    font-weight: 600;
+font-size: 12px;
+
+
+text-align: center;
+
+text-transform: uppercase;
+
+
+
+color: #121212;
+
+opacity: 0.4;
+}
+.bg .text-block .text
+{display: block;
+    padding-top: 16px;
+    font-weight: 600;
+font-size: 26px;
+white-space: nowrap;
+
+
+text-align: center;
+
+text-transform: uppercase;
+
+
+
+color: #121212;
+
+}
+.bg .text-block .email
+{
+   text-align: center;
+   width: 100%;
+   padding: 10px 0px;
+       margin-top: 32px;
+}
+.bg .text-block .sub
+{
+    text-align: center;
+    padding:4% 20%;
+    margin-top: 32px;
+    width: 100%;
+    margin-bottom: 96px;
+    background: #121212;
+    color:white;
+    font-weight: 500;
+font-size: 16px;
+border:none;
+}
+@media (max-width: 1240px) {
+    
+    .photo1,.photo2
+    {
+        display:none;
+    }
+    .bg .text-block .text{
+        font-size: 16px;
+    }
+}

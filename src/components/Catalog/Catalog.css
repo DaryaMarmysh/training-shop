@@ -1,0 +1,37 @@
+.catalog
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,255px);
+    gap:20px 20px;
+    justify-content: space-between;
+}
+.CategoryPage
+{
+    background-color: #F8F8F8;
+    width: 100%;
+
+}
+
+.CategoryPage .container
+{
+    display:flex;
+    flex-direction: column;
+    
+}
+.filter span{
+    padding-left: 12px;
+}
+.view .grid-image
+{
+    padding-left: 24px;
+}
+.best span{
+    padding-right: 4px;
+}
+.filter-block > *
+{
+    display: flex;
+
+   
+
+}

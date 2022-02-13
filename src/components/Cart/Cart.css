@@ -1,0 +1,37 @@
+.cart-img
+{
+    width: 255px;
+    height: 318px;
+}
+.cart-title
+{
+    font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #121212;
+padding-top: 16px;
+opacity: 0.6;
+}
+.cart-coast
+{
+    font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+padding-top: 12px;
+color: #121212;
+}
+.card-inf
+{
+     display: flex;
+     flex-direction: column;
+}
+.card-2
+{
+    display:flex;
+    justify-content: space-between;
+}
+.cart-coast
+{
+    display: inline-block;
+}

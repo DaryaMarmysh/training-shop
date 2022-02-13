@@ -1,0 +1,100 @@
+
+.grid
+{
+    padding-top: 25px;
+   
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "main main wom men"
+    "main main acc acc";
+    column-gap: 30px;
+    row-gap: 30px;
+   
+  
+    
+}
+.grid p{
+    background-color: white;
+    display: inline-block;
+    width: auto;
+    padding: 13px 24px;
+    border-radius: 4px;
+}
+.grid p span{
+    display:block;
+}
+.grid div{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.banner
+{
+
+    grid-area: main;
+    background-image: url("../../img/png/img1.png" );
+    background-position: center;
+    position: relative;
+}
+.banner-title
+{
+    margin-bottom: 14px;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+    color:dimgray;
+}
+.banner-text
+{
+    text-align: center;
+    font-size: 22px;
+    color:#121212;
+}
+.women
+{
+    width: 100%;
+    grid-area: wom;
+    background-image: url("../../img/png/img2.png" );
+    background-position: center;
+}
+.men{
+    grid-area: men;
+    background-image: url("../../img/png/img3.png" );
+    background-position: center;
+}
+.accessories
+{
+    grid-area: acc;
+    background-image: url("../../img/png/img4.png" );
+    background-position: center;
+}
+#arLeft, #arRight
+{
+    position: absolute;
+    z-index: 1;
+}
+#arLeft
+{
+    left: 10px;
+}
+#arRight
+{
+    right:10px;
+    transform: rotate(180deg)
+}
+@media (max-width: 768px) {
+    
+    .grid {
+    
+      height: auto;
+     
+      grid-template-rows: 200px 200px 200px ;
+      grid-template-areas:
+    "wom  wom  men men"
+    "main main main main"
+    "acc acc acc acc"
+    }
+}

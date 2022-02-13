@@ -1,0 +1,58 @@
+.CategoryPage-infoblock
+{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding: 7px 0px;
+    max-width: 1280px;
+    margin: 0px auto;
+   
+}
+
+.info
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+font-weight: 500;
+font-size: 11px;
+
+
+
+
+color: #121212;
+
+opacity: 0.6;
+
+}
+.title h3{
+    text-align: center;
+    font-weight: 600;
+font-size: 26px;
+text-transform: uppercase;
+padding-bottom: 32px;
+}
+.info p{
+    display: inline-block;
+    margin-left: 8px;
+}
+.share
+{
+    display: flex;
+    align-items: center;
+}
+.filter-block
+{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 500;
+font-size: 13px;
+color: #121212;
+opacity: 0.6;
+text-transform: uppercase;
+margin: 32px 0px;
+
+
+}

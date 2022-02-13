@@ -1,0 +1,12 @@
+.icons
+{
+    height: 18px;
+    display:inline-flex;
+    gap:12px;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.icon-item
+{
+    height: 18px;
+}

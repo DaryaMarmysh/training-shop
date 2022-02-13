@@ -1,0 +1,38 @@
+.catalog-title
+{
+
+font-family: Spartan;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+text-transform: uppercase;
+color: #121212;
+
+}
+.catalog-header
+{
+    display: flex;
+    justify-content: space-between;
+    padding:96px 0px 48px;
+
+}
+.catalog-menu-list ul
+{
+     list-style: none;
+    display:flex;
+    gap:32px;
+}
+.catalog-menu-list ul li{
+   
+    font-family: Spartan;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+color: #121212;
+opacity: 0.6;
+}
+.catalog-menu-list ul li:nth-child(1) 
+{
+    font-weight: 500;
+    opacity: 1;
+}
