@@ -8,7 +8,7 @@ import './Men.css'
 import Catalog from "../../Catalog/Catalog";
 import {
    
-    useRouteMatch,
+    useRouteMatch,useLocation
    
   } from "react-router-dom";
   export const men_items = [
@@ -119,7 +119,7 @@ function Men() {
 </div>
    </div>
     
-      <Catalog title='Men' arr={men_items}/>
+      <Catalog title='men' path="/men" arr={men_items}/>
       </div> 
     return section;
 }

@@ -25,12 +25,12 @@ function Footer() {
           <li className="nav__item">
             <h2 className="nav__title">Categories</h2>
             <ul className="nav__ul" data-test-id="menu"> 
-            <Link key={3} to='/Men' className='menu-item' data-test-id={'footer-nav-link-men'}>
+            <Link key={3} to='/men'  className='menu-item' data-test-id={'footer-nav-link-men'}>
               <li>
                 <button className="a">Men</button>
               </li>
               </Link>
-              <Link key={2} to="/Women" className='menu-item' data-test-id={'footer-nav-link-women'}>
+              <Link key={2} to="/women" className='menu-item' data-test-id={'footer-nav-link-women'}>
               <li>
                 <button className="a">Women</button>
               </li>

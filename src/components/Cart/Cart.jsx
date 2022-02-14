@@ -1,13 +1,13 @@
 import React from "react";
 import './Cart.css';
-import {Link, useMatch} from 'react-router-dom';
+import {Link, useMatch,useLocation} from 'react-router-dom';
 
 
 function Cart(props) {
-  
+    
     const section =
 
-    <Link to="/ProductPage" >
+    
         <div className="cart-block" >
             <img src={props.src} alt="item" className="cart-img" />
             <div className="card-inf">
@@ -21,7 +21,7 @@ function Cart(props) {
                 </div>
             </div>
         </div>
-</Link>
+
     return section;
 }
 

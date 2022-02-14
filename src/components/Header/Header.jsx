@@ -43,9 +43,9 @@ function Header() {
 							<img src={logo} alt="logo" />
 						</div>
 					</Link>
-					<div>
+					<div className="menu" data-test-id="menu">
 						<nav className="main-nav" >
-							<ul className="main-nav-list" className="menu" data-test-id="menu">
+							<ul className="main-nav-list" >
 								<Link key={1} to={'/About Us'} className='menu-item' data-test-id={'menu-link-about'}>
 									<li >
 										<button class="a">About Us</button>

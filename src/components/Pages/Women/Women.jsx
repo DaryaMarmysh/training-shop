@@ -108,7 +108,7 @@ function Women() {
                     </div>
                 </div>
        
-      <Catalog title='Women' arr={women_items}/>
+      <Catalog title='women' path='/women' arr={women_items}/>
         
     </div>
     return section;

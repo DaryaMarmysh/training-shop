@@ -16,13 +16,14 @@ function Home() {
         <Galery />
         <div className="clothes" data-test-id={"clothes-women"}>
             <MainPageCatalogHeader title='WOMEN’S' />
-            <Catalog arr={women_items} />
+            <Catalog path='/women' arr={women_items} />
             <Link key={2} to="/women" className='menu-item' data-test-id={'menu-link-women'}>
-                <ButtonSeeAll title='women' /></Link>
+                <ButtonSeeAll title='women' />
+                </Link>
         </div>
         <div className="clothes" data-test-id={"clothes-men"}>
             <MainPageCatalogHeader title='MEN’S' />
-            <Catalog arr={men_items} />
+            <Catalog path='/men' arr={men_items} />
             <Link key={3} to={`/men`} className='menu-item' data-test-id={'menu-link-men'}>
                 <ButtonSeeAll title='men' />
             </Link>
