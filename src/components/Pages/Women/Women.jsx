@@ -1,6 +1,6 @@
 import React from "react";
 import share_icon from '../../../img/svg/share.svg';
-import filter from '../../../img/svg/filter.svg';
+import filter from '../../../img/svg/filter-set.svg';
 import list from '../../../img/svg/view-list.svg';
 import grid from '../../../img/svg/view-grid.svg';
 import small_arr from '../../../img/svg/small-arrow.svg';
@@ -74,9 +74,11 @@ import Catalog from "../../Catalog/Catalog";
     }
 ] 
 function Women() {
-    const section = <div>
-               <div className="CategoryPage-infoblock">
-                    <div className="info">
+    const section = <div className="products-page"  data-test-id="products-page-women">
+       
+               <div className="CategoryPage-infoblock" >
+                   <div className="container">
+                    <div className="info" >
                         <div className="navigation">
                             Home &raquo; <span>Women</span>
                         </div>
@@ -89,8 +91,11 @@ function Women() {
                             Women
                         </h3>
                     </div>
+</div>
                 </div>
+<div className="container">
                 <div className="filter-block">
+
                     <div className="filter">
                         <img src={filter} alt="filter-icon" />
                         <span>filter</span>
@@ -107,7 +112,7 @@ function Women() {
                         <img src={small_arr} alt="arr" />
                     </div>
                 </div>
-       
+       </div>
       <Catalog title='women' path='/women' arr={women_items}/>
         
     </div>

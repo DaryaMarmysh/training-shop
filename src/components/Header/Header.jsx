@@ -35,15 +35,17 @@ function Header() {
 							<Icons />
 						</div>
 					</div>
-				</div></div>
-			<div className="container">
+				</div>
+				</div>
+				<div className="menu"  data-test-id="menu">
+			<div className="container" >
 				<header class="main-header ">
-					<Link to="/">
+					<Link to="/" className="header-nav-logo" data-test-id="header-logo-link">
 						<div>
 							<img src={logo} alt="logo" />
 						</div>
 					</Link>
-					<div className="menu" data-test-id="menu">
+					<div >
 						<nav className="main-nav" >
 							<ul className="main-nav-list" >
 								<Link key={1} to={'/About Us'} className='menu-item' data-test-id={'menu-link-about'}>
@@ -100,7 +102,9 @@ function Header() {
 						</ul>
 					</div>
 				</header>
-			</div></div>
+			</div>
+			</div>
+			</div>
 	return head;
 }
 

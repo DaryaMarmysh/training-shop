@@ -7,15 +7,65 @@ import heart from '../../../img/svg/heart.svg'
 import mail_icon from '../../../img/svg/mail.svg';
 import truck_icon from '../../../img/svg/truck.svg';
 import arr_circle_icon from '../../../img/svg/arr_circl.svg';
-import pay from '../../../img/png/pay_color_group.jpg';
+import pay1 from '../../../img/png/pay1.png';
+import pay2 from '../../../img/png/pay2.png';
+import pay3 from '../../../img/png/pay3.png';
+import pay4 from '../../../img/png/pay4.png';
+import pay5 from '../../../img/png/pay5.png';
+import pay6 from '../../../img/png/pay6.png';
+import pay7 from '../../../img/png/pay7.png';
 
 import write from '../../../img/svg/write.svg'
 import Cart from "../../Cart/Cart";
-function Product() {
-    const section =
+import share_icon from '../../../img/svg/share.svg';
+import filter from '../../../img/svg/filter.svg';
+import list from '../../../img/svg/view-list.svg';
+import { Link,useLocation,useMatch} from 'react-router-dom';
+import { men_items } from '../Men/Men';
+import { women_items } from '../Women/Women';
+function Product(props) {
+    let l=useLocation(); 
+     
+    let cat=(l.pathname).substring((l.pathname).indexOf("/") + 1, (l.pathname).lastIndexOf("/"));
+    let id=(l.pathname).substring((l.pathname).lastIndexOf("/") + 1, (l.pathname).length);
+    let current_array=cat=="women"?women_items:men_items ;
+  
+   
 
-        <div className="container">
+    const section =
+<div className="page-product" data-test-id={`product-page-${cat}`}>
+        <div className="container" >
+        <div className="CategoryPage-infoblock">
+        <div className="container" >
+    <div >
+        
+    <div className="info">
+        <div className="navigation">
+            Home &raquo;<span className="category-name">{cat}</span> &raquo;<span>{current_array[id].title}</span>
+        </div>
+        <div className="share">
+            <img src={share_icon} alt="icon" />
+            <p>Share</p></div>
+    </div>
+    <div className="title">
+        <h3>
+        {current_array[id].title}
+        </h3>
+    </div>
+    <div className="product-page-footer">
+    <div className="product-page-footer-item">
+        <img src={process.env.PUBLIC_URL + '/stars.svg'} alt="stars" />
+        2 Reviews
+    </div>
+    <div className="product-page-footer-item">
+    SKU:<span className="sku">777</span>
+     Availability: <span className="availability">In Stock</span>
+    </div>
+    </div>
+     </div>
+</div></div>
             <div className="product-main">
+                <div className="photo-section">
                 <div className="small-photo-section">
                     <div className="arrows">
                         <img src={arrow_left} alt="up" className="up" />
@@ -33,7 +83,7 @@ function Product() {
                         <img src={arrow_left} alt="left" className="left" />
                         <img src={arrow_left} alt="right" className="right" />
                     </div>
-                </div>
+                </div></div>
                 <div className="information-section">
                     <div className="color-section">
                         <div className="color-title">
@@ -60,7 +110,7 @@ function Product() {
                         <img src={size} alt="size" />
                     </div>
                     <div className="price-section">
-                        <div className="price-block">$ 379.99</div>
+                        <div className="price-block">{current_array[id].coast}</div>
                         <button className="add-to-cart">add to card</button>
                         <div className="img-price-item"> <img src={heart} alt="heart" className="like" /></div>
                         <div className="img-price-item"><img src={rule} alt="rule" className="rule" /></div>
@@ -90,7 +140,14 @@ function Product() {
 
                     <div className="pay-color">
                         <span className="up-line">guaranteed safe checkout</span>
-                        <img src={pay} alt="pay" />
+                        <div className="pay-color-images">
+                        <img src={pay1} alt="pay" />
+                        <img src={pay2} alt="pay" />
+                        <img src={pay3} alt="pay" />
+                        <img src={pay4} alt="pay" />
+                        <img src={pay5} alt="pay" />
+                        <img src={pay6} alt="pay" />
+                        <img src={pay7} alt="pay" /></div>
                     </div>
                     <div className="description">DESCRIPTION</div>
                     <div className="additional-section">
@@ -159,7 +216,7 @@ function Product() {
                     <Cart title="Women's tracksuit Q109" coast="$ 30.00" src={process.env.PUBLIC_URL + '/img/png/related/4.jpg'}/>
                 </div></div>
             
-        </div>
+        </div></div>
 
     return section;
 }

@@ -1,7 +1,7 @@
 .catalog-title
 {
 
-font-family: Spartan;
+
 font-style: normal;
 font-weight: 600;
 font-size: 22px;
@@ -24,7 +24,7 @@ color: #121212;
 }
 .catalog-menu-list ul li{
    
-    font-family: Spartan;
+   
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
@@ -35,4 +35,17 @@ opacity: 0.6;
 {
     font-weight: 500;
     opacity: 1;
+}
+@media (max-width: 768px) {
+    .catalog-header
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalog-menu-list ul
+    {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
 }

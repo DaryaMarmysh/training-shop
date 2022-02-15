@@ -6,8 +6,6 @@ import {Link, useMatch,useLocation} from 'react-router-dom';
 function Cart(props) {
     
     const section =
-
-    
         <div className="cart-block" >
             <img src={props.src} alt="item" className="cart-img" />
             <div className="card-inf">

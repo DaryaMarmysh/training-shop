@@ -1,7 +1,7 @@
 .main-header{
     max-width: 1280px;
 }
-.header .container:nth-child(1)
+.header> .container:nth-child(1)
 {
     background-color: #121212;
 }

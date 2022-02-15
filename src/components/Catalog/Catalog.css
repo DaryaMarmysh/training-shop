@@ -4,6 +4,7 @@
     grid-template-columns: repeat(auto-fill,255px);
     gap:20px 20px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .CategoryPage
 {
@@ -34,4 +35,13 @@
 
    
 
+}
+@media (max-width: 768px) {
+    .catalog
+    {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }

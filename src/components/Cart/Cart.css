@@ -35,3 +35,7 @@ color: #121212;
 {
     display: inline-block;
 }
+.cart-block
+{
+    max-width: 255px;
+}

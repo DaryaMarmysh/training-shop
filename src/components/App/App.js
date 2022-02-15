@@ -18,7 +18,7 @@ function App() {
         <Route exact path='/' element={Home()} />  
         <Route exact gender='women'  path={`/${'women'}`} element={Women()} />
         <Route exact gender='men'  path={`/${'men'}`} element={Men()} />
-        <Route  path="/:gender/:id" element={ProductPage()} />
+        <Route  path="/:gender/:id" element={<ProductPage  />} />
           </Routes>
         <Footer />
     

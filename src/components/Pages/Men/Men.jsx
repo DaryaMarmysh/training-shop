@@ -1,6 +1,6 @@
 import React from "react";
 import share_icon from '../../../img/svg/share.svg';
-import filter from '../../../img/svg/filter.svg';
+import filter from '../../../img/svg/filter-set.svg';
 import list from '../../../img/svg/view-list.svg';
 import grid from '../../../img/svg/view-grid.svg';
 import small_arr from '../../../img/svg/small-arrow.svg';
@@ -79,7 +79,7 @@ import {
 ]
 function Men() {
     
-    const section = <div >
+    const section = <div className="products-page" data-test-id="products-page-men">
         <div className="CategoryPage-infoblock">
         <div className="container" >
     <div >
